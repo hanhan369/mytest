@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "8879f769-a7f3-4c4b-b75f-e6b4db50673c",
+		"name": "1-搜索sug",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3484858"
+	},
+	"item": [
+		{
+			"name": "n.mse.360.cn/l?m=adbyso",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    // pm.response.to.have.status(400);\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"errno\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    // pm.expect(jsonData.errno).to.eql(100);\r",
+							"    pm.expect(jsonData.errno).to.eql( '0' );\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"errmsg\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.errmsg).to.eql(\"\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "k",
+							"value": "3mu4HHL0l4L32d16cKX7HsX5QoWZhI0Xn3BTD52nXptZKXyioLQ6Dz8B4G+f48BijS6x1lw7Bm4N\nUjtINCmxBNJuRvTyAZkO6NPe2Ncvc+QasQBCL7HyhFGIY86dAzmI0uFCgS8+wVOrcwBUpBHeVv7H\nRtU6CVtSimrbAloXGOTn4hWfWRu0IxRXBCmz1x1pYvHP1obs48ft195dhctaPI3EDPwM3YEZuAt4\nTQw4VeISkZLwAq34+jvXUuso0JJMa8L8tKl++9o3VDHK+VvbNhQLjtZt6CZIkDxJWZ8QkR0e7v/i\n08kCg/e9QQL3dSovSFRLp8idZbHj613sef3Oc482ZpKk6bSE0RcdgPxGuHsi9QrbgfigK6s8tRLh\nloLgGbTf+F0qbMSr/bsQHdHeVdLEfakxoG6h/Z4H1t3v+eGmyuKKsJ6/snq6Y0zsXUD5P4wE4W1y\n8SDUdMk6ysZISRdllRMwzokMQPP1OgA0m9J5xmZwPbdgeeK2fkKlUoSs1woDVCzulYYahTdo7J/3\nQ9vO+udOr2fFmS0pl4iKmDPDtT5Y3612taB03nQegKe2eJMRCal5dQJrtsKJOgVWeSxpPBvlR3U/\nWp1bqvYTojG99Bt/n82pKYnLsgpIapMqRv5s4j0XJV4=",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://n.mse.360.cn/l?m=adbyso&v=1&ts=1576836433347&rt=1831&wid=d1d0fe55d3a0a9f665bd6ac4dc080943",
+					"protocol": "http",
+					"host": [
+						"n",
+						"mse",
+						"360",
+						"cn"
+					],
+					"path": [
+						"l"
+					],
+					"query": [
+						{
+							"key": "m",
+							"value": "adbyso"
+						},
+						{
+							"key": "v",
+							"value": "1"
+						},
+						{
+							"key": "ts",
+							"value": "1576836433347"
+						},
+						{
+							"key": "rt",
+							"value": "1831"
+						},
+						{
+							"key": "wid",
+							"value": "d1d0fe55d3a0a9f665bd6ac4dc080943"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
