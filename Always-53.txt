@@ -1,3 +1,0 @@
-browserapi_newman - Build # 53 - Successful:
-
-Check console output at http://localhost:8080/job/browserapi_newman/53/ to view the results.
