@@ -5,7 +5,7 @@ import time
 
 from subprocess import run
 import sys
-print("1")
+
 path_json = os.path.join(sys.argv[1],sys.argv[2])
 name_result_json = "result_json_"+sys.argv[3]+".json"
 name_result_html = "result_html_"+sys.argv[3]+".html"
