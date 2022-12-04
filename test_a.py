@@ -1,7 +1,5 @@
 import requests
 import json
-print("新增内容，创建历史记录，方便执行")
-print("第2次修改")
 def getallversionBigTopThree(appkey: str) -> list:
     url = 'https://radar.qihoo.net/report/config/dimensionList.do'
     parame = {
