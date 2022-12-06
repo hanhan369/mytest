@@ -5,3 +5,4 @@ for i in str1:
         break
     print(i)
 print("天黑了")
+print("你看呢？")
