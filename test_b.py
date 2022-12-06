@@ -4,3 +4,4 @@ for i in str1:
     if i == '自':
         break
     print(i)
+print("天黑了")
